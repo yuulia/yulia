@@ -4,17 +4,6 @@ import random
 
 def get_word(language):
     if language.lower() == 'русский':
-        with open('words_hangman_rus.txt', encoding='utf-8', mode='r') as file:
-            word = random.choice(file.read().splitlines())
-            file.close()
-    elif language.lower() == 'english':
-        with open('words_hangman.txt', 'r') as file:
-            word = random.choice(file.read().splitlines())
-            file.close()
-    if word not in guessed_words:
-        return word
-    return get_word(language)
-
 
 def lang_check(language):
     if language.lower() == 'русский' or language.lower() == 'english':
