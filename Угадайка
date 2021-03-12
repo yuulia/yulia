@@ -4,6 +4,7 @@ import random
 
 
 
+
 def display_hangman(tries):
     stage = [  # Final stage
         '''
