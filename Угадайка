@@ -76,6 +76,7 @@ def display_hangman(tries):
     
     
     def play(word):
+    word_completion
 
 
 
