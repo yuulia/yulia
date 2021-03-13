@@ -80,7 +80,7 @@ def display_hangman(tries):
     guessed_words = []
     tries = 6
 
-    print('Давайте играть в угадайку слов!')
+    print('Играть?')
     print(display_hangman(tries))
     print(word_completion)
     print()
@@ -95,7 +95,7 @@ def display_hangman(tries):
                 tries -= 1
                 guessed_letters.append(guess)
             else:
-                print('Правильно, буква', guess, 'присутствует в слове!')
+                print('Правильно, буква', guess, 'есть в слове!')
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
                 indices = [i for i in range(len(word)) if word[i] == guess]
@@ -122,7 +122,7 @@ def display_hangman(tries):
     if guessed:
         print( Вы угадали!')
     else:
-        print('Вы не угадали слово. Загаданным словом было ' + word + '.')
+        print('Не правильно. Загаданным словом было ' + word + '.')
         
         
         again = 'да'
